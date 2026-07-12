@@ -1,0 +1,24 @@
+function openSite(){
+
+let password = "12345";
+
+if(document.getElementById("pass").value == password){
+
+let sound = new Audio("scary.mp3");
+sound.volume = 1;
+sound.play();
+
+setTimeout(function(){
+
+document.getElementById("login").style.display="none";
+document.getElementById("site").style.display="block";
+
+},1500);
+
+}else{
+
+alert("Wrong Password");
+
+}
+
+}
