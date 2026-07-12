@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NIGHT LORD SIAVASH</title>
+
+<style>
+body{
+    background:black;
+    color:#00ff00;
+    font-family:monospace;
+    text-align:center;
+}
+
+.box{
+    margin:50px auto;
+    width:90%;
+    max-width:500px;
+    border:2px solid #00ff00;
+    padding:25px;
+    box-shadow:0 0 20px #00ff00;
+}
+
+h1{
+    font-size:45px;
+    color:red;
+    text-shadow:0 0 20px red;
+}
+
+input, textarea, button{
+    width:90%;
+    padding:12px;
+    margin:10px;
+    background:black;
+    color:white;
+    border:1px solid #00ff00;
+}
+
+button{
+    background:#00ff00;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+#site{
+    display:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="box" id="login">
+
+<h1>ACCESS</h1>
+
+<p>ENTER PASSWORD</p>
+
+<input id="pass" type="password">
+
+<button onclick="openSite()">LOGIN</button>
+
+</div>
+
+
+<div id="site">
+
+<h1>NIGHT LORD SIAVASH</h1>
+
+<div class="box">
+
+<h2>WhatsApp Ban Appeal</h2>
+
+<textarea placeholder="Write your appeal message..."></textarea>
+
+</div>
+
+
+<div class="box">
+
+<h2>Report Illegal Activity</h2>
+
+<input placeholder="WhatsApp Number">
+
+<div>
+<img src="" width="200" height="150" 
+style="border:2px solid green;"
+alt="Evidence Image">
+</div>
+
+<button>
+REPORT NUMBER
+</button>
+
+</div>
+
+</div>
+
+
+<script>
+
+function openSite(){
+
+let password="12345";
+
+if(document.getElementById("pass").value==password){
+
+document.getElementById("login").style.display="none";
+document.getElementById("site").style.display="block";
+
+}
+
+else{
+
+alert("Wrong Password");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
